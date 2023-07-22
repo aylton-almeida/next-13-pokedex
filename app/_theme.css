@@ -1,0 +1,61 @@
+:root {
+  /* Colors */
+  --color-primary: #e3350d;
+  --color-primary-light: #ff7f6a;
+  --color-primary-dark: #a30000;
+  --color-text-accent: #fff;
+  --color-accent: #4dad5b;
+  --color-accent-light: #7edc8c;
+  --color-accent-dark: #1e5e1e;
+  --color-text-accent: #fff;
+  --color-background: #313131;
+  --color-background-secondary: #616161;
+  --color-text-accent: #fff;
+
+  /* Font */
+  --font: 'Roboto', sans-serif;
+  --font-content-xxsmall: 1rem;
+  --font-content-xsmall: 1.2rem;
+  --font-content-small: 1.4rem;
+  --font-content-regular: 1.6rem;
+  --font-content-large: 1.8rem;
+  --font-content-xlarge: 2rem;
+  --font-content-xxlarge: 2.4rem;
+  --font-content-xxxlarge: 3.2rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacings */
+  --spacings-xxxsmall: 0.8rem;
+  --spacings-xxsmall: 1.2rem;
+  --spacings-xsmall: 1.6rem;
+  --spacings-small: 2.4rem;
+  --spacings-medium: 3.2rem;
+  --spacings-large: 4rem;
+  --spacings-xlarge: 4.8rem;
+  --spacings-xxlarge: 5.6rem;
+  --spacings-xxxlarge: 8rem;
+
+  /* Z-Indices */
+  --z-index-base: 10;
+  --z-index-menu: 20;
+  --z-index-overlay: 30;
+  --z-index-modal: 40;
+  --z-index-alwaysOnTop: 50;
+
+  /* Animation */
+  --transition-default: .3s ease-in-out;
+  --transition-fast: .1s ease-in-out;
+
+  /* Breakpoints */
+  --breakpoints-huge: 1440px;
+  --breakpoints-large: 1170px;
+  --breakpoints-medium: 768px;
+  --breakpoints-small: 450px;
+
+  /* Heights */
+  --heights-appbar: 8rem;
+  --heights-footer: 16rem;
+}

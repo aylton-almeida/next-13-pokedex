@@ -1,0 +1,46 @@
+.appBar,
+.section,
+.aside,
+.footer {
+  display: grid;
+  place-items: center;
+
+}
+
+.appBar {
+  background-color: red;
+  height: var(--heights-appbar);
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  z-index: var(--z-index-menu);
+}
+
+.main {
+  min-height: calc(100% - var(--heights-appbar));
+  width: 100%;
+
+  display: flex;
+
+}
+
+.section {
+  background-color: blue;
+  flex: 3;
+
+  height: 1500px;
+}
+
+.aside {
+  background-color: green;
+  flex: 1;
+}
+
+.footer {
+  height: var(--heights-footer);
+  width: 100%;
+
+  background-color: black;
+}
