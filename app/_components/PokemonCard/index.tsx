@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import styles from './index.module.css'
 import Image from 'next/image'
+import { TypeBadge } from '@_components/TypeBadge'
+import { Fragment } from 'react'
+import { PokemonType } from '@_types/global'
 
 type PokemonCardProps = {
   id: number
   name: string
   image: string
-  types: string[]
+  types: PokemonType[]
   color: string
   priority?: boolean
 }
@@ -37,7 +40,13 @@ export const PokemonCard = ({
             .toString()
             .padStart(4, '0')}`}</p>
           <h2 className={styles.name}>{name}</h2>
-          <p className={styles.types}>{types.join(', ')}</p>
+          <div className={styles.types}>
+            {types.map((type) => (
+              <Fragment key={type}>
+                <TypeBadge type={type} />
+              </Fragment>
+            ))}
+          </div>
         </div>
       </Link>
     </article>

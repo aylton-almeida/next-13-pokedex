@@ -1,5 +1,5 @@
 .article {
-  padding: var(--spacings-xsmall);
+  padding: var(--spacings-xsmall) var(--spacings-xxxsmall);
 
   width: 100%;
   min-width: 160px;
@@ -25,7 +25,7 @@
   flex-direction: column;
   gap: var(--spacings-xxxsmall);
 
-  padding: var(--spacings-xxxsmall) var(--spacings-xxsmall);
+  padding: var(--spacings-xxxsmall) var(--spacings-xxxsmall);
 }
 
 .number {
@@ -34,9 +34,10 @@
   opacity: 0.8;
 }
 
-/* TODO: move to its own component */
 .types {
-  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacings-xxxsmall);
 }
 
 @media (min-width: 768px) {
