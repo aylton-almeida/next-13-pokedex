@@ -10,7 +10,8 @@
   align-items: center;
   justify-content: center;
 
-  border-bottom: .1rem solid var(--color-background-secondary);
+  border-bottom: 0.1rem solid var(--color-background-secondary);
+  background-color: var(--color-background);
 }
 
 .img {
@@ -19,7 +20,6 @@
 
   transition: all var(--transition-default);
 }
-
 
 @media (min-width: 768px) {
   .img {

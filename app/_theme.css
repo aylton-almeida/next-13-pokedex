@@ -46,8 +46,8 @@
   --z-index-alwaysOnTop: 50;
 
   /* Animation */
-  --transition-default: .3s ease-in-out;
-  --transition-fast: .1s ease-in-out;
+  --transition-default: 0.3s ease-in-out;
+  --transition-fast: 0.1s ease-in-out;
 
   /* Breakpoints */
   --breakpoints-hg: 1440px;
@@ -57,5 +57,5 @@
 
   /* Heights */
   --heights-appbar: 8rem;
-  --heights-footer: 16rem;
+  --heights-footer: 6rem;
 }

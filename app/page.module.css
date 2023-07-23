@@ -3,32 +3,61 @@
 .footer {
   display: grid;
   place-items: center;
-
 }
 
 .main {
   min-height: calc(100% - var(--heights-appbar));
-  width: 100%;
+  max-width: 120rem;
 
   display: flex;
   flex-direction: column-reverse;
+
+  margin: 0 auto;
+}
+
+.card {
+  height: 30rem;
+  width: 100%;
+
+  background-color: green;
+}
+
+.section,
+.aside {
+  padding: var(--spacings-small) var(--spacings-xsmall);
+  gap: var(--spacings-xsmall);
 }
 
 .section {
-  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .aside {
-  flex: 1;
-}
-
-.footer {
-  height: var(--heights-footer);
-  width: 100%;
+  display: flex;
 }
 
 @media (min-width: 768px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1170px) {
   .main {
     flex-direction: row;
+  }
+
+  .section {
+    flex: 1;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .aside {
+    flex-shrink: 0;
+    width: 30rem;
+
+    flex-direction: column;
   }
 }

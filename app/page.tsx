@@ -6,10 +6,26 @@ export default function Home() {
     <>
       <AppBar />
       <main className={styles.main}>
-        <section className={styles.section}>Section</section>
-        <aside className={styles.aside}>Aside</aside>
+        <section className={styles.section}>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+        </section>
+        <aside className={styles.aside}>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+          <article className={styles.card}></article>
+        </aside>
       </main>
-      <footer className={styles.footer}>Footer</footer>
     </>
   )
 }
