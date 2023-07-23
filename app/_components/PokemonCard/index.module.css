@@ -45,3 +45,27 @@
     transform: translateY(-0.4rem);
   }
 }
+
+/* Loading Skeleton */
+
+.numberSkeleton {
+  height: 1.8rem;
+}
+
+.nameSkeleton {
+  height: 3rem;
+}
+
+.typesSkeleton {
+  height: 2.3rem;
+}
+
+@media (min-width: 768px) {
+  .nameSkeleton {
+    height: 3.6rem;
+  }
+
+  .typesSkeleton {
+    height: 2.6rem;
+  }
+}

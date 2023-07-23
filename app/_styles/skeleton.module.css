@@ -1,0 +1,15 @@
+.loading {
+  animation: loading-skeleton 1s linear infinite alternate;
+
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes loading-skeleton {
+  0% {
+    background-color: hsl(0, 0%, 30%);
+  }
+  100% {
+    background-color: hsl(0, 0%, 35%);
+  }
+}

@@ -15,7 +15,7 @@
 }
 
 .img {
-  height: 3rem;
+  height: 30px;
   width: 16.62rem;
 
   transition: all var(--transition-default);
@@ -23,7 +23,7 @@
 
 @media (min-width: 768px) {
   .img {
-    height: 4rem;
+    height: 40px;
     width: 22.16rem;
   }
 }

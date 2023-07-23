@@ -39,7 +39,7 @@ export const PokemonCard = ({
           <p className={styles.number}>{`Nº ${id
             .toString()
             .padStart(4, '0')}`}</p>
-          <h2 className={styles.name}>{name}</h2>
+          <h2>{name}</h2>
           <div className={styles.types}>
             {types.map((type) => (
               <Fragment key={type}>

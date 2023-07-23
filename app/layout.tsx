@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@_styles/theme.css'
 import '@_styles/globals.css'
+import { AppBar } from '@_components/AppBar'
 
 export const metadata: Metadata = {
   title: 'Pokedex',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <AppBar />
+        {children}
+      </body>
     </html>
   )
 }
