@@ -1,0 +1,29 @@
+.header {
+  height: var(--heights-appbar);
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-menu);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: .1rem solid var(--color-background-secondary);
+}
+
+.img {
+  height: 3rem;
+  width: 16.62rem;
+
+  transition: all var(--transition-default);
+}
+
+
+@media (min-width: 768px) {
+  .img {
+    height: 4rem;
+    width: 22.16rem;
+  }
+}

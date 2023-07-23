@@ -50,10 +50,10 @@
   --transition-fast: .1s ease-in-out;
 
   /* Breakpoints */
-  --breakpoints-huge: 1440px;
-  --breakpoints-large: 1170px;
-  --breakpoints-medium: 768px;
-  --breakpoints-small: 450px;
+  --breakpoints-hg: 1440px;
+  --breakpoints-lg: 1170px;
+  --breakpoints-m: 768px;
+  --breakpoints-s: 450px;
 
   /* Heights */
   --heights-appbar: 8rem;
