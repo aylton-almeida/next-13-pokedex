@@ -38,6 +38,12 @@
   --spacings-xxlarge: 5.6rem;
   --spacings-xxxlarge: 8rem;
 
+  /* Radii */
+  --radii-full: 9999px;
+  --radii-xsmall: 0.4rem;
+  --radii-small: 0.8rem;
+  --radii-normal: 1.6rem;
+
   /* Z-Indices */
   --z-index-base: 10;
   --z-index-menu: 20;

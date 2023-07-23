@@ -1,0 +1,46 @@
+.article {
+  padding: var(--spacings-xsmall);
+
+  width: 100%;
+  min-width: 160px;
+  overflow: hidden;
+
+  border-radius: var(--radii-normal);
+
+  transition: all var(--transition-default);
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-xxxsmall);
+
+  padding: var(--spacings-xxxsmall) var(--spacings-xxsmall);
+}
+
+.number {
+  font-size: var(--font-content-xsmall);
+  font-weight: var(--font-weight-bold);
+  opacity: 0.8;
+}
+
+/* TODO: move to its own component */
+.types {
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .article:hover {
+    transform: translateY(-0.4rem);
+  }
+}
