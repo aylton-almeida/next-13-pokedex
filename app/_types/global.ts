@@ -16,3 +16,12 @@ export type PokemonType = | 'normal'
 | 'dragon'
 | 'dark'
 | 'fairy'
+
+
+export type Pokemon = {
+  id: number
+  name: string
+  types: PokemonType[]
+  image: string
+  color: string
+} 

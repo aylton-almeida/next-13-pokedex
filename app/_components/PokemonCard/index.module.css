@@ -42,7 +42,7 @@
 
 @media (min-width: 768px) {
   .article:hover {
-    transform: translateY(-0.4rem);
+    transform: scale(1.05);
   }
 }
 

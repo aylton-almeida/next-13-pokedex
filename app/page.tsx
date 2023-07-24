@@ -1,30 +1,22 @@
-import { AppBar } from '@_components/AppBar'
 import styles from './page.module.css'
-import { PokemonCard } from '@_components/PokemonCard'
 import { getPokemons } from '@_services/poke-api'
-import { Fragment } from 'react'
-import { PokemonCardSkeleton } from '@_components/PokemonCard/skeleton'
-
-// TODO: Add loading state
+import { PokemonList } from '@_components/PokemonList'
 
 export default async function Home() {
-  const { pokemons } = await getPokemons({ limit: 12, offset: 0 })
+  const { pokemons, limit, offset, hasMore } = await getPokemons({
+    limit: 24,
+    offset: 0
+  })
 
   return (
     <main className={styles.main}>
       <section className={styles.section}>
-        {pokemons.map(({ id, image, color, name, types }, index) => (
-          <Fragment key={id}>
-            <PokemonCard
-              id={id}
-              image={image}
-              name={name}
-              types={types}
-              color={color}
-              priority={index < 4}
-            />
-          </Fragment>
-        ))}
+        <PokemonList
+          pokemons={pokemons}
+          limit={limit}
+          offset={offset}
+          hasMore={hasMore}
+        />
       </section>
       {/* <aside className={styles.aside}>
           <PokemonCard

@@ -20,7 +20,7 @@ export const PokemonCard = ({
   image,
   types,
   color,
-  priority = false // TODO: add priority to first x cards
+  priority = false
 }: PokemonCardProps) => {
   return (
     <article className={styles.article} style={{ backgroundColor: color }}>

@@ -1,13 +1,8 @@
 import skeleton from '@_styles/skeleton.module.css'
 import styles from './index.module.css'
-import { Key } from 'react'
 
-type PokemonCardSkeletonProps = {
-  key?: Key
-}
-
-export const PokemonCardSkeleton = ({ key }: PokemonCardSkeletonProps) => (
-  <article className={`${styles.article} ${skeleton.loading}`} key={key}>
+export const PokemonCardSkeleton = () => (
+  <article className={`${styles.article} ${skeleton.loading}`}>
     <div className={styles.imgWrapper}>
       <div className={styles.img} />
     </div>
