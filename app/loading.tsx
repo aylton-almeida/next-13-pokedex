@@ -1,4 +1,4 @@
-import { PokemonCardSkeleton } from '@_components/PokemonCard/skeleton'
+import { PokemonCardSkeleton } from '_components/PokemonCard/skeleton'
 import styles from './page.module.css'
 
 export default function Loading() {

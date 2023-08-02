@@ -1,6 +1,6 @@
-import { PokemonCard } from '@_components/PokemonCard'
+import { PokemonCard } from '_components/PokemonCard'
 import { LoadMore } from './components/LoadMore'
-import { Pokemon } from '@_types/global'
+import { Pokemon } from '_types/global'
 
 type PokemonListProps = {
   pokemons: Pokemon[]

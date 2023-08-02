@@ -1,6 +1,6 @@
 'use server'
 
-import { Pokemon, PokemonType } from '@_types/global'
+import { Pokemon, PokemonType } from '_types/global'
 import ColorThief from 'colorthief'
 import { cache } from 'react'
 

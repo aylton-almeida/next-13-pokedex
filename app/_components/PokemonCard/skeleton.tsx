@@ -1,4 +1,4 @@
-import skeleton from '@_styles/skeleton.module.css'
+import skeleton from '_styles/skeleton.module.css'
 import styles from './index.module.css'
 
 export const PokemonCardSkeleton = () => (

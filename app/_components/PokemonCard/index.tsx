@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styles from './index.module.css'
 import Image from 'next/image'
-import { TypeBadge } from '@_components/TypeBadge'
+import { TypeBadge } from '_components/TypeBadge'
 import { Fragment } from 'react'
-import { PokemonType } from '@_types/global'
+import { PokemonType } from '_types/global'
 
 type PokemonCardProps = {
   id: number
@@ -36,9 +36,9 @@ export const PokemonCard = ({
           />
         </div>
         <div className={styles.description}>
-          <p className={styles.number}>{`Nº ${id
-            .toString()
-            .padStart(4, '0')}`}</p>
+          <p className={styles.number}>
+            {`Nº ${id.toString().padStart(4, '0')}`}
+          </p>
           <h2>{name}</h2>
           <div className={styles.types}>
             {types.map((type) => (

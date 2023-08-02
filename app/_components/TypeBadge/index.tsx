@@ -1,4 +1,4 @@
-import { PokemonType } from '@_types/global'
+import { PokemonType } from '_types/global'
 import styles from './index.module.css'
 
 type TypeBadge = {

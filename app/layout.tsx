@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import '@_styles/theme.css'
-import '@_styles/globals.css'
-import { AppBar } from '@_components/AppBar'
+import '_styles/theme.css'
+import '_styles/globals.css'
+import { AppBar } from '_components/AppBar'
 
 export const metadata: Metadata = {
   title: 'Pokedex',

@@ -1,13 +1,13 @@
 'use client'
 
-import { PokemonCard } from '@_components/PokemonCard'
-import { PokemonCardSkeleton } from '@_components/PokemonCard/skeleton'
+import { PokemonCard } from '_components/PokemonCard'
+import { PokemonCardSkeleton } from '_components/PokemonCard/skeleton'
 import useInfiniteScroll from '@_hooks/use-infinite-scroll'
 import { getPokemons } from '@_services/poke-api'
 import { useState } from 'react'
 
 import styles from './index.module.css'
-import { Pokemon } from '@_types/global'
+import { Pokemon } from '_types/global'
 
 type LoadMoreProps = {
   limit: number

@@ -1,6 +1,6 @@
 import styles from './page.module.css'
-import { getPokemons } from '@_services/poke-api'
-import { PokemonList } from '@_components/PokemonList'
+import { getPokemons } from '_services/poke-api'
+import { PokemonList } from '_components/PokemonList'
 
 export default async function Home() {
   const { pokemons, limit, offset, hasMore } = await getPokemons({
@@ -18,29 +18,6 @@ export default async function Home() {
           hasMore={hasMore}
         />
       </section>
-      {/* <aside className={styles.aside}>
-          <PokemonCard
-            id={1007}
-            image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/1007.png"
-            name="Koraidon"
-            types={['fighting', 'dragon']}
-            color="#925a5e"
-          />
-          <PokemonCard
-            id={1007}
-            image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/1007.png"
-            name="Koraidon"
-            types={['fighting', 'dragon']}
-            color="#925a5e"
-          />
-          <PokemonCard
-            id={1007}
-            image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/1007.png"
-            name="Koraidon"
-            types={['fighting', 'dragon']}
-            color="#925a5e"
-          />
-        </aside> */}
     </main>
   )
 }
